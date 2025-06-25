@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone, Send } from "lucide-react"
 import { useLanguage } from "@/hooks/use-language"
+import CtaParallax from "./cta-parallax"
 
 export default function ContactSection() {
   const ref = useRef(null)
@@ -37,26 +38,7 @@ export default function ContactSection() {
   return (
     <>
       {/* Header Banner */}
-      <section
-        className="relative py-20 overflow-hidden"
-        style={{
-          backgroundImage: "url('/images/contact-bg.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-slate-900/70" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-3xl lg:text-4xl font-light text-white"
-          >
-            {t("contact.banner")}
-          </motion.h2>
-        </div>
-      </section>
+     <CtaParallax />
 
       {/* Contact Form Section */}
       <section ref={ref} className="py-20 bg-gray-50">

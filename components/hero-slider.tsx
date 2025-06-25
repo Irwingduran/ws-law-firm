@@ -1,105 +1,66 @@
 "use client"
-
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react"
-import { t } from "@/utils/translation" // Import t function
-
-const slides = [
-  {
-    id: 1,
-    image: "/images/hero-bg.png",
-    title: t("hero.slide1.title"),
-    subtitle: t("hero.slide1.subtitle"),
-    description: t("hero.slide1.description"),
-    buttonText: t("hero.slide1.button"),
-  },
-  {
-    id: 2,
-    image: "/placeholder.svg?height=800&width=1200",
-    title: t("hero.slide2.title"),
-    subtitle: t("hero.slide2.subtitle"),
-    description: t("hero.slide2.description"),
-    buttonText: t("hero.slide2.button"),
-  },
-  {
-    id: 3,
-    image: "/placeholder.svg?height=800&width=1200",
-    title: t("hero.slide3.title"),
-    subtitle: t("hero.slide3.subtitle"),
-    description: t("hero.slide3.description"),
-    buttonText: t("hero.slide3.button"),
-  },
-  {
-    id: 4,
-    image: "/placeholder.svg?height=800&width=1200",
-    title: t("hero.slide4.title"),
-    subtitle: t("hero.slide4.subtitle"),
-    description: t("hero.slide4.description"),
-    buttonText: t("hero.slide4.button"),
-  },
-]
-
-const transitionEffects = [
-  "mosaic",
-  "mosaicSpiral",
-  "curtainTopLeft",
-  "curtainBottomRight",
-  "blindCurtainSliceTop",
-  "stampede",
-  "topLeftBottomRight",
-  "simpleFade",
-]
+import { useLanguage } from "@/hooks/use-language";
 
 export default function CameraHeroSlider() {
+  const { t } = useLanguage();
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isTransitioning, setIsTransitioning] = useState(false)
   const [isPlaying, setIsPlaying] = useState(true)
-  const [currentEffect, setCurrentEffect] = useState("mosaic")
   const [loadingProgress, setLoadingProgress] = useState(0)
   const intervalRef = useRef<NodeJS.Timeout | null>(null)
   const sliderRef = useRef<HTMLDivElement>(null)
 
-  // const { t } = useLanguage() // Remove this line as t is now imported
+  const slides = [
+    {
+      id: 1,
+      image: "/slider/portada.jpeg",
+      title: t("hero.slide1.title"),
+      subtitle: t("hero.slide1.subtitle"),
+      description: t("hero.slide1.description"),
+      buttonText: t("hero.slide1.button"),
+    },
+    {
+      id: 2,
+      image: "/slider/Mision.jpeg",
+      title: t("hero.slide2.title"),
+      subtitle: t("hero.slide2.subtitle"),
+      description: t("hero.slide2.description"),
+      buttonText: t("hero.slide2.button"),
+    },
+    {
+      id: 3,
+      image: "/slider/slide_4.png",
+      title: t("hero.slide3.title"),
+      subtitle: t("hero.slide3.subtitle"),
+      description: t("hero.slide3.description"),
+      buttonText: t("hero.slide3.button"),
+    },
+    {
+      id: 4,
+      image: "/slider/slide3.jpeg",
+      title: t("hero.slide4.title"),
+      subtitle: t("hero.slide4.subtitle"),
+      description: t("hero.slide4.description"),
+      buttonText: t("hero.slide4.button"),
+    },
+  ];
 
-  const createGridBlocks = (effect: string) => {
-    const cols = effect.includes("mosaic") ? 8 : 6
-    const rows = effect.includes("mosaic") ? 6 : 4
+  // Solo usamos 'mosaicSpiral' como efecto
+  const createGridBlocks = () => {
+    const cols = 8
+    const rows = 6
     const blocks = []
 
     for (let i = 0; i < rows * cols; i++) {
       const row = Math.floor(i / cols)
       const col = i % cols
-      let delay = 0
-
-      switch (effect) {
-        case "mosaic":
-          delay = Math.random() * 800
-          break
-        case "mosaicSpiral":
-          const centerRow = Math.floor(rows / 2)
-          const centerCol = Math.floor(cols / 2)
-          const distance = Math.abs(row - centerRow) + Math.abs(col - centerCol)
-          delay = distance * 100
-          break
-        case "curtainTopLeft":
-          delay = (row + col) * 80
-          break
-        case "curtainBottomRight":
-          delay = (rows - 1 - row + (cols - 1 - col)) * 80
-          break
-        case "blindCurtainSliceTop":
-          delay = row * 120
-          break
-        case "stampede":
-          delay = col * 100 + Math.random() * 200
-          break
-        case "topLeftBottomRight":
-          delay = (row + col) * 60
-          break
-        default:
-          delay = 0
-      }
+      const centerRow = Math.floor(rows / 2)
+      const centerCol = Math.floor(cols / 2)
+      const distance = Math.abs(row - centerRow) + Math.abs(col - centerCol)
+      const delay = distance * 100
 
       blocks.push({
         id: i,
@@ -118,13 +79,9 @@ export default function CameraHeroSlider() {
 
   const nextSlide = () => {
     if (isTransitioning) return
-
-    const randomEffect = transitionEffects[Math.floor(Math.random() * transitionEffects.length)]
-    setCurrentEffect(randomEffect)
     setIsTransitioning(true)
     setLoadingProgress(0)
 
-    // Simulate loading progress
     const progressInterval = setInterval(() => {
       setLoadingProgress((prev) => {
         if (prev >= 100) {
@@ -146,9 +103,6 @@ export default function CameraHeroSlider() {
 
   const prevSlide = () => {
     if (isTransitioning) return
-
-    const randomEffect = transitionEffects[Math.floor(Math.random() * transitionEffects.length)]
-    setCurrentEffect(randomEffect)
     setIsTransitioning(true)
     setLoadingProgress(0)
 
@@ -163,9 +117,6 @@ export default function CameraHeroSlider() {
 
   const goToSlide = (index: number) => {
     if (isTransitioning || index === currentSlide) return
-
-    const randomEffect = transitionEffects[Math.floor(Math.random() * transitionEffects.length)]
-    setCurrentEffect(randomEffect)
     setIsTransitioning(true)
     setLoadingProgress(0)
 
@@ -199,7 +150,7 @@ export default function CameraHeroSlider() {
     }
   }, [isPlaying, isTransitioning])
 
-  const { blocks, cols, rows } = createGridBlocks(currentEffect)
+  const { blocks, cols, rows } = createGridBlocks()
 
   return (
     <div
@@ -223,9 +174,8 @@ export default function CameraHeroSlider() {
               backgroundRepeat: "no-repeat",
             }}
           >
-            {/* Elegant Overlay */}
+            {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/60 to-transparent" />
-
             {/* Content */}
             <div className="relative z-20 h-full flex items-center">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -254,10 +204,10 @@ export default function CameraHeroSlider() {
         ))}
       </div>
 
-      {/* Camera Transition Grid Overlay */}
+      {/* Mosaic Spiral Transition Grid Overlay */}
       {isTransitioning && (
         <div
-          className={`absolute inset-0 z-30 camera-grid camera-${currentEffect}`}
+          className="absolute inset-0 z-30 camera-grid camera-mosaicSpiral"
           style={{
             display: "grid",
             gridTemplateColumns: `repeat(${cols}, 1fr)`,
@@ -269,7 +219,6 @@ export default function CameraHeroSlider() {
               key={block.id}
               className="camera-block"
               style={{
-                ...block.style,
                 animationDelay: `${block.delay}ms`,
                 backgroundImage: `url(${slides[currentSlide].image})`,
                 backgroundSize: `${cols * 100}% ${rows * 100}%`,
@@ -280,7 +229,7 @@ export default function CameraHeroSlider() {
         </div>
       )}
 
-      {/* Elegant Navigation Controls */}
+      {/* Navigation Buttons */}
       <div className="absolute top-1/2 -translate-y-1/2 left-8 z-40">
         <button
           onClick={prevSlide}
@@ -290,7 +239,6 @@ export default function CameraHeroSlider() {
           <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
         </button>
       </div>
-
       <div className="absolute top-1/2 -translate-y-1/2 right-8 z-40">
         <button
           onClick={nextSlide}
@@ -315,7 +263,7 @@ export default function CameraHeroSlider() {
         </button>
       </div>
 
-      {/* Elegant Pagination */}
+      {/* Pagination */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-40">
         <div className="flex items-center space-x-4 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 border border-white/20">
           {slides.map((_, index) => (
@@ -345,7 +293,7 @@ export default function CameraHeroSlider() {
                 stroke="currentColor"
                 strokeWidth="3"
                 fill="none"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                d="M18 2.0845a15.9155 15.9155 0 010 31.831a15.9155 15.9155 0 010-31.831"
               />
               <path
                 className="text-amber-400"
@@ -354,7 +302,7 @@ export default function CameraHeroSlider() {
                 strokeDasharray={`${loadingProgress}, 100`}
                 strokeLinecap="round"
                 fill="none"
-                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                d="M18 2.0845a15.9155 15.9155 0 010 31.831a15.9155 15.9155 0 010-31.831"
               />
             </svg>
             <div className="absolute inset-0 flex items-center justify-center">
@@ -363,9 +311,6 @@ export default function CameraHeroSlider() {
           </div>
         </div>
       )}
-
-      {/* Overlay Protection */}
-      <div className="absolute inset-0 z-5 pointer-events-none select-none" />
     </div>
   )
 }
