@@ -204,7 +204,7 @@ const translations = {
     "contact.form.email": "Email:",
     "contact.form.message": "Message:",
     "contact.form.send": "Send Message",
-    "footer.copyright": "© Copyrights 2022. All Rights Reserved.",
+    "footer.copyright": "© Copyrights 2025. All Rights Reserved.",
   },
 }
 
