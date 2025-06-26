@@ -67,7 +67,8 @@ export default function Navbar() {
               {t("nav.contacto")}
             </a>
             <span className="text-gray-400">/</span>
-              {/* Language Dropdown */}Add commentMore actions
+            
+              {/* Language Dropdown */}
             <div className="relative">
               <button
                 onClick={() => toggleDropdown("language")}
