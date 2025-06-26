@@ -181,11 +181,6 @@ export default function ContactSection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-gray-400 mb-2">{t("footer.copyright")}</p>
-            <div className="flex justify-center space-x-2 text-sm">
-              <span className="font-semibold">ES</span>
-              <span className="text-gray-400">/</span>
-              <span className="text-gray-400">EN</span>
-            </div>
           </div>
         </div>
       </footer>
