@@ -75,6 +75,9 @@ export default function Navbar() {
             <div className="text-right">
              <Image src="/logo.png" alt="logo" width={150} height={150} />
             </div>
+            <div className="text-right">
+            <h2>ES/EN</h2>
+            </div>
           </div>
 
           {/* Mobile menu button */}
