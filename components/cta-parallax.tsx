@@ -10,9 +10,9 @@ interface CtaParallaxProps {
 }
 
 export default function CtaParallax({
-  title = "¿Listo para dar el siguiente paso?",
-  subtitle = "Contáctanos hoy y recibe una consulta personalizada.",
-  buttonText = "Contáctanos",
+  title = "En Camacho del Río Abogados y Consultores",
+  subtitle = "Tu tranquilidad es lo más importante.",
+  buttonText = "CONTÁCTANOS",
   onClick,
 }: CtaParallaxProps) {
   const parallaxRef = useRef<HTMLDivElement>(null)
