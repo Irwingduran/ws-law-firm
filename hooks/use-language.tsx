@@ -27,18 +27,18 @@ const translations = {
     "hero.slide1.description":
       "Protegemos sus intereses con experiencia y dedicación en el ámbito del derecho administrativo.",
     "hero.slide1.button": "CONTÁCTANOS",
-    "hero.slide2.title": "DERECHO",
-    "hero.slide2.subtitle": "CORPORATIVO",
-    "hero.slide2.description": "Asesoría integral para empresas en todas las etapas de su desarrollo corporativo.",
-    "hero.slide2.button": "CONOCER MÁS",
+    "hero.slide2.title": "COMPRAS",
+    "hero.slide2.subtitle": "GUBERNAMENTALES",
+    "hero.slide2.description": "Coordinamos la participación de empresas en procedimeintos de contratación.",
+    "hero.slide2.button": "CONTÁCTANOS",
     "hero.slide3.title": "CONSULTORÍA",
     "hero.slide3.subtitle": "LEGAL",
     "hero.slide3.description": "Soluciones jurídicas personalizadas para cada necesidad de nuestros clientes.",
-    "hero.slide3.button": "CONSULTAR",
-    "hero.slide4.title": "LITIGIOS",
-    "hero.slide4.subtitle": "ESTRATÉGICOS",
+    "hero.slide3.button": "CONTÁCTANOS",
+    "hero.slide4.title": "LITIGIO",
+    "hero.slide4.subtitle": "ADMINISTRATIVO",
     "hero.slide4.description": "Representación legal especializada con un enfoque estratégico y resultados efectivos.",
-    "hero.slide4.button": "ASESORARSE",
+    "hero.slide4.button": "CONTÁCTANOS",
 
     // About
     "about.title": "NUESTRA",
@@ -57,13 +57,13 @@ const translations = {
     "values.title": "CAMACHO DEL RÍO",
     "values.subtitle": "ABOGADOS Y CONSULTORES",
     "values.description": "Comprometidos con todos nuestros clientes, para ofrecerles el mejor servicio.",
-    "values.mission.title": "Misión",
+    "values.mission.title": "Profesionalismo",
     "values.mission.description":
       "Brindar servicios jurídicos de excelencia con un enfoque integral y personalizado para cada cliente.",
-    "values.vision.title": "Visión",
+    "values.vision.title": "Altamente preparados",
     "values.vision.description":
       "Ser la firma líder en Derecho Administrativo, reconocida por nuestra innovación y resultados.",
-    "values.values.title": "Valores",
+    "values.values.title": "Crecimietno continuo",
     "values.values.description":
       "Integridad, profesionalismo, compromiso y excelencia en cada uno de nuestros servicios.",
     "values.cta.text": "Somos una firma de abogados con más de 10 años de experiencia en Derecho Administrativo",
@@ -94,13 +94,16 @@ const translations = {
       "¿Necesita asesoría especializada en alguna de estas áreas? Nuestro equipo de expertos está listo para ayudarle.",
     "services.cta.button": "Solicitar Consulta",
 
+    // Buttons
+    "services.learnMore": "Ver más",
+
     // Contact
     "contact.banner": "Asesoría Jurídica en Materia de Fiscalización",
     "contact.title": "Contáctanos",
     "contact.description1":
       "Ponte en contacto con nosotros para cualquier duda sobre alguno de nuestros servicios, con gusto estaremos atendiendo tus peticiones.",
     "contact.description2":
-      "Ponte en contacto con nosotros para cualquier duda sobre alguno de nuestros servicios, con gusto estaremos atendiendo tus peticiones.",
+      "En Camacho del Río Abogados y Consultores tu tranquilidad es lo más importante.",
     "contact.email": "Correo:",
     "contact.location": "Dónde nos Encontramos:",
     "contact.phone": "Teléfono:",
@@ -108,7 +111,7 @@ const translations = {
     "contact.form.email": "Correo:",
     "contact.form.message": "Mensaje:",
     "contact.form.send": "Enviar Mensaje",
-    "footer.copyright": "© Copyrights 2025. All Rights Reserved.",
+    "footer.copyright": "© Copyrights 2025. All Rights Reserved. / Delta Consultora Digital",
   },
   en: {
     // Navbar
