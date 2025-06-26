@@ -67,7 +67,7 @@ export default function ServicesSection() {
         t("services.responsabilidades.benefits.3"),
       ]
     },
-    {
+    /*{
       icon: Plane,
       title: t("services.migratorio.title"),
       description: t("services.migratorio.description"),
@@ -81,7 +81,7 @@ export default function ServicesSection() {
         t("services.migratorio.benefits.2"),
         t("services.migratorio.benefits.3"),
       ]
-    },
+    },*/
     {
       icon: GraduationCap,
       title: t("services.capacitacion.title"),
