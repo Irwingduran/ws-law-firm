@@ -86,7 +86,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">{t("contact.location")}</h4>
-                    <p className="text-gray-600">CDMX</p>
+                    <p className="text-gray-600">Polanco - CDMX</p>
                   </div>
                 </motion.div>
 
@@ -101,7 +101,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-slate-900 mb-1">{t("contact.phone")}</h4>
-                    <p className="text-gray-600">+52 (55) 1234-5678</p>
+                    <p className="text-gray-600">+52 (55) 1513-6357</p>
                   </div>
                 </motion.div>
               </div>
