@@ -67,16 +67,38 @@ export default function Navbar() {
               {t("nav.contacto")}
             </a>
             <span className="text-gray-400">/</span>
-
+              {/* Language Dropdown */}Add commentMore actions
+            <div className="relative">
+              <button
+                onClick={() => toggleDropdown("language")}
+                className="flex items-center space-x-1 hover:text-gray-300 transition-colors"
+              >
+                <span>{t("nav.idioma")}</span>
+                <ChevronDown className="w-4 h-4" />
+              </button>
+              {activeDropdown === "language" && (
+                <div className="absolute top-full left-0 mt-2 w-32 bg-white text-gray-900 rounded-md shadow-lg py-2 z-50">
+                  <button
+                    onClick={() => handleLanguageChange("es")}
+                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                  >
+                    Español
+                  </button>
+                  <button
+                    onClick={() => handleLanguageChange("en")}
+                    className="block w-full text-left px-4 py-2 hover:bg-gray-100"
+                  >
+                    English
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Brand */}
           <div className="flex items-center space-x-4">
             <div className="text-right">
              <Image src="/logo.png" alt="logo" width={150} height={150} />
-            </div>
-            <div className="text-right">
-            <h2>ES/EN</h2>
             </div>
           </div>
 
