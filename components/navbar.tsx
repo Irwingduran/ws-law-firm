@@ -68,7 +68,14 @@ export default function Navbar() {
             </a>
             <span className="text-gray-400">/</span>
 
-          </div>       
+          </div>
+
+          {/* Brand */}
+          <div className="flex items-center space-x-4">
+            <div className="text-right">
+             <Image src="/logo.png" alt="logo" width={150} height={150} />
+            </div>
+          </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
