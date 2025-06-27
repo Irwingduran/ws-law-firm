@@ -75,6 +75,14 @@ const translations = {
     "services.litigio.title": "Litigio Administrativo",
     "services.litigio.description":
       "Asesoría y defensa en contra de actos u omisiones de las dependencias y entidades de la administración pública en todos los niveles de gobierno.",
+    "services.detailsTitle": "Litigio"
+    "sevices.litigio.details.1": "Interposición de recursos administrativos ante autoridades.",
+    "sevices.litigio.details.2": "Juicios ante el TFJA y Tribunales locales.",
+    "sevices.litigio.details.3": "Defensa de sanciones impuestas por las autoridades administrativas.",
+    "services.benefitsTitle": "Beneficios",
+    "services.litigio.benefits.1": "Atención personalizada",
+    "services.litigio.benefits.2": "Contestación en tiempo real",
+    "services.litigio.benefits.3": "Expertos en tu caso",
     "services.compras.title": "Compras Gubernamentales",
     "services.compras.description":
       "Coordinamos la participación de empresas en procedimientos de contratación con las diversas dependencias y entidades del sector público.",
@@ -93,9 +101,11 @@ const translations = {
     "services.cta.text":
       "¿Necesita asesoría especializada en alguna de estas áreas? Nuestro equipo de expertos está listo para ayudarle.",
     "services.cta.button": "Solicitar Consulta",
+    "services.ctaText": "En Camacho del Río Abogados y Consultores tu tranquilidad es lo más importante.",
 
     // Buttons
     "services.learnMore": "Ver más",
+    "services.contactButton": "CONTÁCTANOS",
 
     // Contact
     "contact.banner": "Asesoría Jurídica en Materia de Fiscalización",
