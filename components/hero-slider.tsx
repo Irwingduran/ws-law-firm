@@ -24,7 +24,7 @@ export default function CameraHeroSlider() {
     },
     {
       id: 2,
-      image: "/slider/slide_3.jpeg",
+      image: "/slider/slide3.jpeg",
       title: t("hero.slide2.title"),
       subtitle: t("hero.slide2.subtitle"),
       description: t("hero.slide2.description"),
@@ -32,7 +32,7 @@ export default function CameraHeroSlider() {
     },
     {
       id: 3,
-      image: "/slider/slide3.png",
+      image: "/slider/slide3.jpeg",
       title: t("hero.slide3.title"),
       subtitle: t("hero.slide3.subtitle"),
       description: t("hero.slide3.description"),
