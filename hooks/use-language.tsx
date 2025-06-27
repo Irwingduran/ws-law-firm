@@ -75,7 +75,7 @@ const translations = {
     "services.litigio.title": "Litigio Administrativo",
     "services.litigio.description":
       "Asesoría y defensa en contra de actos u omisiones de las dependencias y entidades de la administración pública en todos los niveles de gobierno.",
-    "services.detailsTitle": "Litigio"
+    "services.detailsTitle": "Litigio",
     "sevices.litigio.details.1": "Interposición de recursos administrativos ante autoridades.",
     "sevices.litigio.details.2": "Juicios ante el TFJA y Tribunales locales.",
     "sevices.litigio.details.3": "Defensa de sanciones impuestas por las autoridades administrativas.",
