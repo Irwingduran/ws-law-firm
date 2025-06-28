@@ -42,7 +42,7 @@ export default function AboutSection() {
             >
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
-                  <span className="text-slate-900 font-bold text-lg">10+</span>
+                  <span className="text-slate-900 font-bold text-lg">15+</span>
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">{t("about.years")}</p>
