@@ -75,33 +75,37 @@ const translations = {
     "services.litigio.title": "Litigio Administrativo",
     "services.litigio.description":
       "Asesoría y defensa en contra de actos u omisiones de las dependencias y entidades de la administración pública en todos los niveles de gobierno.",
-    "services.detailsTitle": "Litigio",
+    "services.litigio.detailsTitle": "Litigio",
     "services.litigio.details.1": "Interposición de recursos administrativos ante autoridades.",
     "services.litigio.details.2": "Juicios ante el TFJA y Tribunales locales.",
     "services.litigio.details.3": "Defensa de sanciones impuestas por las autoridades administrativas.",
-    "services.benefitsTitle": "Beneficios",
-    "services.litigio.benefits.1": "Atención personalizada.",
-    "services.litigio.benefits.2": "Contestación en tiempo real.",
-    "services.litigio.benefits.3": "Expertos en tu caso.",
     "services.compras.title": "Compras Gubernamentales",
     "services.compras.description":
       "Coordinamos la participación de empresas en procedimientos de contratación con las diversas dependencias y entidades del sector público.",
+    "services.compras.detailsTitle": "Compras",
     "services.responsabilidades.title": "Responsabilidades Administrativas",
     "services.responsabilidades.description":
       "Representación a servidores públicos o ex servidores, así como a particulares, en procedimientos administrativos de responsabilidades.",
+    "services.responsabilidades.detailsTitle": "Responsabilidades",
     "services.migratorio.title": "Migratorio",
     "services.migratorio.description":
       "Asesoramos a nuestros clientes y sus familiares de nacionalidad extranjera para que obtengan la calidad migratoria que requieran en México.",
     "services.capacitacion.title": "Capacitación",
     "services.capacitacion.description":
       "Impartición de cursos de capacitación en materia de responsabilidades administrativas y Anticorrupción a servidores públicos.",
+    "services.capacitacion.detailsTitle": "Capacitación",
     "services.asesoria.title": "Asesoría",
     "services.asesoria.description":
       "Ofrecemos servicios de acompañamiento a dependencias y entidades durante la ejecución de las revisiones y auditorías gubernamentales.",
+    "services.asesoria.detailsTitle": "Asesoría",
+    "services.benefitsTitle": "Beneficios",
+    "services.benefits.1": "Atención personalizada.",
+    "services.benefits.2": "Contestación en tiempo real.",
+    "services.benefits.3": "Expertos en tu caso.",
     "services.cta.text":
       "¿Necesita asesoría especializada en alguna de estas áreas? Nuestro equipo de expertos está listo para ayudarle.",
     "services.cta.button": "Solicitar Consulta",
-    "services.ctaText": "En Camacho del Río Abogados y Consultores tu tranquilidad es lo más importante.",
+    "services.ctaText": "En Camacho del Río Abogados y Consultores tu tranquilidad es nuestra prioridad.",
 
     // Buttons
     "services.learnMore": "Ver más",
@@ -113,7 +117,7 @@ const translations = {
     "contact.description1":
       "Ponte en contacto con nosotros para cualquier duda sobre alguno de nuestros servicios, con gusto estaremos atendiendo tus peticiones.",
     "contact.description2":
-      "En Camacho del Río Abogados y Consultores tu tranquilidad es lo más importante.",
+      "En Camacho del Río Abogados y Consultores tu tranquilidad es nuestra prioridad.",
     "contact.email": "Correo:",
     "contact.location": "Dónde nos Encontramos:",
     "contact.phone": "Teléfono:",
