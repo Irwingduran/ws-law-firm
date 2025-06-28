@@ -1,4 +1,4 @@
-eriencia"use client"
+"use client"
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
