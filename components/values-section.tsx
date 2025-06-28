@@ -1,4 +1,4 @@
-"use client"
+eriencia"use client"
 
 import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
@@ -15,18 +15,18 @@ export default function ValuesSection() {
   const values = [
     {
       icon: Settings,
-      title: t("values.mission.title"),
-      description: t("values.mission.description"),
+      title: t("values.experiencia.title"),
+      description: t("values.experiencia.description"),
     },
     {
       icon: Lightbulb,
-      title: t("values.vision.title"),
-      description: t("values.vision.description"),
+      title: t("values.profesionalismo.title"),
+      description: t("values.profesionalismo.description"),
     },
     {
       icon: TrendingUp,
-      title: t("values.values.title"),
-      description: t("values.values.description"),
+      title: t("values.calidad.title"),
+      description: t("values.calidad.description"),
     },
   ]
 
