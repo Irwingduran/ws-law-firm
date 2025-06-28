@@ -15,18 +15,18 @@ export default function ValuesSection() {
   const values = [
     {
       icon: Settings,
-      title: t("values.experiencia.title"),
-      description: t("values.experiencia.description"),
+      title: t("values.mission.title"),
+      description: t("values.mission.description"),
     },
     {
       icon: Lightbulb,
-      title: t("values.profesionalismo.title"),
-      description: t("values.profesionalismo.description"),
+      title: t("values.vision.title"),
+      description: t("values.vision.description"),
     },
     {
       icon: TrendingUp,
-      title: t("values.calidad.title"),
-      description: t("values.calidad.description"),
+      title: t("values.values.title"),
+      description: t("values.values.description"),
     },
   ]
 
