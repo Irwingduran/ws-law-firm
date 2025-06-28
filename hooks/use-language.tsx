@@ -94,7 +94,7 @@ const translations = {
     "services.asesoria.description":
       "Ofrecemos servicios de acompañamiento a dependencias y entidades durante la ejecución de las revisiones y auditorías gubernamentales.",
     "services.detailsTitle": "Detalles",
-    "services.benefitsTitle": "Beneficios",
+    "services.benefitsTitle": "Beneficios al contratarnos",
     "services.benefits.1": "Atención personalizada.",
     "services.benefits.2": "Contestación en tiempo real.",
     "services.benefits.3": "Expertos en tu caso.",
