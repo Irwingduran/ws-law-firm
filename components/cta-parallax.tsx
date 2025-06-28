@@ -11,7 +11,7 @@ interface CtaParallaxProps {
 
 export default function CtaParallax({
   title = "En Camacho del Río Abogados y Consultores",
-  subtitle = "Tu tranquilidad es lo más importante.",
+  subtitle = "Tu tranquilidad es nuestra prioridad.",
   buttonText = "CONTÁCTANOS",
   onClick,
 }: CtaParallaxProps) {
