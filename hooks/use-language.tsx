@@ -57,16 +57,16 @@ const translations = {
     "values.title": "CAMACHO DEL RÍO",
     "values.subtitle": "ABOGADOS Y CONSULTORES",
     "values.description": "Comprometidos con todos nuestros clientes, para ofrecerles el mejor servicio.",
-    "values.mission.title": "Profesionalismo",
-    "values.mission.description":
+    "values.experiencia.title": "Experiencia",
+    "values.experiencia.description":
       "Brindar servicios jurídicos de excelencia con un enfoque integral y personalizado para cada cliente.",
-    "values.vision.title": "Altamente preparados",
-    "values.vision.description":
+    "values.profesionalismo.title": "Profesionalismo",
+    "values.profesionalismo.description":
       "Ser la firma líder en Derecho Administrativo, reconocida por nuestra innovación y resultados.",
-    "values.values.title": "Crecimietno continuo",
-    "values.values.description":
+    "values.calidad.title": "Calidad Humana",
+    "values.calidad.description":
       "Integridad, profesionalismo, compromiso y excelencia en cada uno de nuestros servicios.",
-    "values.cta.text": "Somos una firma de abogados con más de 10 años de experiencia en Derecho Administrativo",
+    "values.cta.text": "Somos una firma de abogados con más de 15 años de experiencia en Derecho Administrativo",
     "values.cta.button": "CONTÁCTANOS",
 
     // Services
