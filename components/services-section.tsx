@@ -32,9 +32,9 @@ export default function ServicesSection() {
         t("services.litigio.details.3"),
       ],
       benefits: [
-        t("services.litigio.benefits.1"),
-        t("services.litigio.benefits.2"),
-        t("services.litigio.benefits.3"),
+        t("services.benefits.1"),
+        t("services.benefits.2"),
+        t("services.benefits.3"),
       ]
     },
     {
@@ -47,9 +47,9 @@ export default function ServicesSection() {
         t("services.compras.details.3"),
       ],
       benefits: [
-        t("services.compras.benefits.1"),
-        t("services.compras.benefits.2"),
-        t("services.compras.benefits.3"),
+        t("services.benefits.1"),
+        t("services.benefits.2"),
+        t("services.benefits.3"),
       ]
     },
     {
@@ -62,9 +62,9 @@ export default function ServicesSection() {
         t("services.responsabilidades.details.3"),
       ],
       benefits: [
-        t("services.responsabilidades.benefits.1"),
-        t("services.responsabilidades.benefits.2"),
-        t("services.responsabilidades.benefits.3"),
+        t("services.benefits.1"),
+        t("services.benefits.2"),
+        t("services.benefits.3"),
       ]
     },
     /*{
@@ -92,9 +92,9 @@ export default function ServicesSection() {
         t("services.capacitacion.details.3"),
       ],
       benefits: [
-        t("services.capacitacion.benefits.1"),
-        t("services.capacitacion.benefits.2"),
-        t("services.capacitacion.benefits.3"),
+        t("services.benefits.1"),
+        t("services.benefits.2"),
+        t("services.benefits.3"),
       ]
     },
     {
@@ -107,9 +107,9 @@ export default function ServicesSection() {
         t("services.asesoria.details.3"),
       ],
       benefits: [
-        t("services.asesoria.benefits.1"),
-        t("services.asesoria.benefits.2"),
-        t("services.asesoria.benefits.3"),
+        t("services.benefits.1"),
+        t("services.benefits.2"),
+        t("services.benefits.3"),
       ]
     },
   ]
