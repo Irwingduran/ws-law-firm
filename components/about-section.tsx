@@ -2,13 +2,13 @@
 
 import { useRef, useState } from "react"
 import { motion, useInView } from "framer-motion"
-import { useLanguage } from "@/hooks/use-language"
+import { useLanguage } from "@/app/providers/language-provider"
 
 export default function AboutSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
   const [imageLoaded, setImageLoaded] = useState(false)
-  const { t } = useLanguage()
+  const { t } = useLanguage ()
 
   return (
     <section ref={ref} className="py-20 bg-gray-50">

@@ -3,7 +3,7 @@
 import { useRef, useState } from "react"
 import { motion, useInView, AnimatePresence } from "framer-motion"
 import { Briefcase, DollarSign, Shield, GraduationCap, Users, X, ChevronRight } from "lucide-react"
-import { useLanguage } from "@/hooks/use-language"
+import { useLanguage } from "@/app/providers/language-provider"
 import { Button } from "./ui/button"
 
 
@@ -22,6 +22,10 @@ export default function ServicesSection() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const { t } = useLanguage()
+
+  const handleClick = () => {
+    window.open('https://tu-url-de-contacto.com', '_blank')
+  }
 
   const services: Service[] = [
     {
@@ -269,18 +273,6 @@ export default function ServicesSection() {
                         ))}
                       </ul>
                     </div>
-                  </div>
-
-                  {/* CTA */}
-                  <div className="mt-12 pt-8 border-t border-gray-200 text-center">
-                    <p className="text-lg text-gray-700 mb-6">
-                      {t("services.ctaText")}
-                    </p>
-                    <Button asChild className="px-5 py-2 bg-[#941614] hover:bg-[#b31a17] text-white font-medium rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
-                      <a href="https://wa.me/55515136357" target="_blank" rel="noopener noreferrer">
-                        {t("services.contactButton")}
-                      </a>
-                    </Button>
                   </div>
                 </div>
               </div>

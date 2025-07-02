@@ -4,7 +4,8 @@ import { useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import { Settings, Lightbulb, TrendingUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useLanguage } from "@/hooks/use-language"
+import { useLanguage } from "@/app/providers/language-provider"
+import CtaParallax from "./cta-parallax"
 
 export default function ValuesSection() {
   const ref = useRef(null)
@@ -68,43 +69,8 @@ export default function ValuesSection() {
           ))}
         </div>
 
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={isInView ? { opacity: 1, scale: 1 } : {}}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          className="relative overflow-hidden rounded-3xl"
-          style={{
-            backgroundImage: "url('/images/values-bg.png')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/80 to-slate-900/70" />
-          <div className="relative py-20 px-8 text-center">
-            <motion.h3
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.8 }}
-              className="text-3xl lg:text-4xl font-light text-white mb-8 max-w-4xl mx-auto leading-tight"
-            >
-              {t("values.cta.text")}
-            </motion.h3>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.6, delay: 1 }}
-            >
-              <Button
-                size="lg"
-                className="bg-[#941614] hover:bg-[#b31a17] text-white px-10 py-4 text-lg font-semibold tracking-wide transition-all duration-300 transform hover:scale-105 shadow-lg"
-              >
-                {t("values.cta.button")}
-              </Button>
-            </motion.div>
-          </div>
-        </motion.div>
       </div>
+       <CtaParallax />
     </section>
   )
 }

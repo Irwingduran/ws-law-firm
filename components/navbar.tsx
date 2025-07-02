@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { ChevronDown, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useLanguage } from "@/hooks/use-language"
+import { useLanguage } from "@/app/providers/language-provider"
 import Image from "next/image"
 
 export default function Navbar() {

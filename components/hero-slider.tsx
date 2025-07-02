@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Play, Pause } from "lucide-react"
-import { useLanguage } from "@/hooks/use-language";
+import { useLanguage } from "@/app/providers/language-provider"
 
 export default function CameraHeroSlider() {
   const { t } = useLanguage();
@@ -192,6 +192,7 @@ export default function CameraHeroSlider() {
                     {slide.description}
                   </p>
                   <Button
+                  onClick={() => window.open("https://wa.me/55515136357", "_blank")}
                     size="lg"
                     className="bg-[#941614] hover:bg-[#b31a17] text-white px-10 py-4 text-lg font-semibold tracking-wide transition-all duration-300 transform hover:scale-105 shadow-lg"
                   >

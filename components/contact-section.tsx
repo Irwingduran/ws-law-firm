@@ -8,8 +8,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Mail, MapPin, Phone, Send } from "lucide-react"
-import { useLanguage } from "@/hooks/use-language"
-import CtaParallax from "./cta-parallax"
+import { useLanguage } from "@/app/providers/language-provider"
+import  CtaParallax  from "./cta-parallax"
 
 export default function ContactSection() {
   const ref = useRef(null)
