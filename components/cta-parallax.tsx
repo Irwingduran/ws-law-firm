@@ -22,12 +22,12 @@ export default function CtaParallax() {
   return (
     <div
       ref={parallaxRef}
-      className="relative w-full h-[300px] md:h-[400px] overflow-hidden flex items-center justify-center"
+      className="relative w-full h-[400px] md:h-[400px]  overflow-hidden flex items-center justify-center"
       style={{
-        backgroundImage: 'url(/img/books.png)', // Asegúrate de que esta ruta sea correcta
+        backgroundImage: 'url(/img/books.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        backgroundAttachment: 'fixed', // Esto ayuda a enfatizar el efecto
+        backgroundAttachment: 'fixed', 
         transition: 'background-position-y 0.1s linear'
       }}
     >
