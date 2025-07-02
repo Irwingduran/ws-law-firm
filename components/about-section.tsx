@@ -41,8 +41,8 @@ export default function AboutSection() {
               className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-6 border border-gray-100"
             >
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center">
-                  <span className="text-slate-900 font-bold text-lg">15+</span>
+                <div className="w-12 h-12 bg-[#941614] rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">15+</span>
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">{t("about.years")}</p>
@@ -64,10 +64,10 @@ export default function AboutSection() {
                 initial={{ width: 0 }}
                 animate={isInView ? { width: "80px" } : {}}
                 transition={{ duration: 0.8, delay: 0.4 }}
-                className="h-1 bg-amber-400 mb-6"
+                className="h-1 bg-[#941614] mb-6"
               />
               <h2 className="text-4xl lg:text-5xl font-light text-slate-900 mb-6">
-                {t("about.title")} <span className="font-serif italic text-amber-600">{t("about.subtitle")}</span>
+                {t("about.title")} <span className="font-serif italic text-[#941614]">{t("about.subtitle")}</span>
               </h2>
             </div>
 
@@ -97,15 +97,15 @@ export default function AboutSection() {
               className="grid grid-cols-3 gap-8 pt-8 border-t border-gray-200"
             >
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600 mb-2">500+</div>
+                <div className="text-3xl font-bold text-[#941614] mb-2">500+</div>
                 <div className="text-sm text-gray-600">{t("about.stats.cases")}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600 mb-2">15+</div>
+                <div className="text-3xl font-bold text-[#941614] mb-2">15+</div>
                 <div className="text-sm text-gray-600">{t("about.stats.specialists")}</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-amber-600 mb-2">24/7</div>
+                <div className="text-3xl font-bold text-[#941614] mb-2">24/7</div>
                 <div className="text-sm text-gray-600">{t("about.stats.availability")}</div>
               </div>
             </motion.div>

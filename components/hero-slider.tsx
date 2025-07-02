@@ -181,11 +181,11 @@ export default function CameraHeroSlider() {
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
                 <div className="max-w-3xl">
                   <div className="mb-6">
-                    <div className="w-20 h-1 bg-amber-400 mb-6"></div>
+                    <div className="w-20 h-1 bg-[#941614] mb-6"></div>
                     <h1 className="text-4xl md:text-6xl lg:text-7xl font-light text-white mb-4 leading-tight tracking-wide">
                       {slide.title}
                       <br />
-                      <span className="font-serif italic text-amber-400">{slide.subtitle}</span>
+                      <span className="font-serif italic text-[#941614]">{slide.subtitle}</span>
                     </h1>
                   </div>
                   <p className="text-xl md:text-2xl text-white/90 mb-10 max-w-2xl font-light leading-relaxed">
@@ -193,7 +193,7 @@ export default function CameraHeroSlider() {
                   </p>
                   <Button
                     size="lg"
-                    className="bg-amber-400 hover:bg-amber-500 text-slate-900 px-10 py-4 text-lg font-semibold tracking-wide transition-all duration-300 transform hover:scale-105 shadow-lg"
+                    className="bg-[#941614] hover:bg-[#b31a17] text-white px-10 py-4 text-lg font-semibold tracking-wide transition-all duration-300 transform hover:scale-105 shadow-lg"
                   >
                     {slide.buttonText}
                   </Button>
@@ -272,11 +272,11 @@ export default function CameraHeroSlider() {
               onClick={() => goToSlide(index)}
               disabled={isTransitioning}
               className={`relative w-3 h-3 rounded-full transition-all duration-300 ${
-                index === currentSlide ? "bg-amber-400 scale-125" : "bg-white/50 hover:bg-white/70"
+                index === currentSlide ? "bg-[#941614] scale-125" : "bg-white/50 hover:bg-white/70"
               }`}
             >
               {index === currentSlide && (
-                <div className="absolute inset-0 rounded-full bg-amber-400 animate-ping opacity-75"></div>
+                <div className="absolute inset-0 rounded-full bg-[#941614] animate-ping opacity-75"></div>
               )}
             </button>
           ))}
@@ -296,7 +296,7 @@ export default function CameraHeroSlider() {
                 d="M18 2.0845a15.9155 15.9155 0 010 31.831a15.9155 15.9155 0 010-31.831"
               />
               <path
-                className="text-amber-400"
+                className="text-[#941614]"
                 stroke="currentColor"
                 strokeWidth="3"
                 strokeDasharray={`${loadingProgress}, 100`}

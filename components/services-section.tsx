@@ -2,8 +2,10 @@
 
 import { useRef, useState } from "react"
 import { motion, useInView, AnimatePresence } from "framer-motion"
-import { Briefcase, DollarSign, Shield, Plane, GraduationCap, Users, X, ChevronRight } from "lucide-react"
+import { Briefcase, DollarSign, Shield, GraduationCap, Users, X, ChevronRight } from "lucide-react"
 import { useLanguage } from "@/hooks/use-language"
+import { Button } from "./ui/button"
+
 
 interface Service {
   icon: React.ComponentType<{ className?: string }>
@@ -139,9 +141,9 @@ export default function ServicesSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <div className="w-20 h-1 bg-amber-400 mx-auto mb-6" />
+          <div className="w-20 h-1 bg-[#941614] mx-auto mb-6" />
           <h2 className="text-4xl lg:text-5xl font-light text-slate-900 mb-8">
-            {t("services.title")} <span className="font-serif italic text-amber-600">{t("services.subtitle")}</span>
+            {t("services.title")} <span className="font-serif italic text-[#941614]">{t("services.subtitle")}</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             {t("services.intro")}
@@ -161,26 +163,26 @@ export default function ServicesSection() {
             >
               {/* Icon */}
               <div className="relative mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center group-hover:from-amber-400 group-hover:to-amber-500 transition-all duration-500">
+                <div className="w-16 h-16 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl flex items-center justify-center group-hover:from-[#941614] group-hover:to-[#b31a17] transition-all duration-500">
                   <service.icon className="w-8 h-8 text-slate-600 group-hover:text-white transition-colors duration-500" />
                 </div>
-                <div className="absolute inset-0 w-16 h-16 bg-amber-400 rounded-xl opacity-0 group-hover:opacity-20 group-hover:animate-ping transition-opacity duration-500" />
+                <div className="absolute inset-0 w-16 h-16 bg-[#941614] rounded-xl opacity-0 group-hover:opacity-20 group-hover:animate-ping transition-opacity duration-500" />
               </div>
 
               {/* Content */}
-              <h3 className="text-xl font-semibold text-slate-900 mb-4 group-hover:text-amber-600 transition-colors duration-300">
+              <h3 className="text-xl font-semibold text-slate-900 mb-4 group-hover:text-[#941614] transition-colors duration-300">
                 {service.title}
               </h3>
               <p className="text-gray-600 leading-relaxed text-sm mb-6">{service.description}</p>
 
               {/* Learn more link */}
-              <div className="flex items-center text-amber-600 group-hover:text-amber-700 transition-colors duration-300">
+              <div className="flex items-center text-[#941614] group-hover:text-[#b31a17] transition-colors duration-300">
                 <span className="text-sm font-medium">{t("services.learnMore")}</span>
                 <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform duration-300" />
               </div>
 
               {/* Hover Effect Line */}
-              <div className="w-0 h-0.5 bg-gradient-to-r from-amber-400 to-amber-500 mt-6 group-hover:w-full transition-all duration-500" />
+              <div className="w-0 h-0.5 bg-gradient-to-r from-[#941614] to-[#b31a17] mt-6 group-hover:w-full transition-all duration-500" />
             </motion.div>
           ))}
         </div>
@@ -223,7 +225,7 @@ export default function ServicesSection() {
                 <div className="p-8 md:p-12">
                   {/* Service header */}
                   <div className="flex items-start mb-8">
-                    <div className="w-20 h-20 bg-gradient-to-br from-amber-400 to-amber-500 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                    <div className="w-20 h-20 bg-gradient-to-br from-[#941614] to-[#b31a17] rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
                       <selectedService.icon className="w-10 h-10 text-white" />
                     </div>
                     <div>
@@ -243,7 +245,7 @@ export default function ServicesSection() {
                         {selectedService.details?.map((detail, index) => (
                           <li key={index} className="flex items-start">
                             <div className="w-5 h-5 bg-amber-100 rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                              <ChevronRight className="w-3 h-3 text-amber-600" />
+                              <ChevronRight className="w-3 h-3 text-[#941614]" />
                             </div>
                             <span className="text-gray-700">{detail}</span>
                           </li>
@@ -274,9 +276,11 @@ export default function ServicesSection() {
                     <p className="text-lg text-gray-700 mb-6">
                       {t("services.ctaText")}
                     </p>
-                    <button className="px-8 py-3 bg-amber-500 hover:bg-amber-600 text-white font-medium rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
-                      {t("services.contactButton")}
-                    </button>
+                    <Button asChild className="px-5 py-2 bg-[#941614] hover:bg-[#b31a17] text-white font-medium rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg">
+                      <a href="https://wa.me/55515136357" target="_blank" rel="noopener noreferrer">
+                        {t("services.contactButton")}
+                      </a>
+                    </Button>
                   </div>
                 </div>
               </div>

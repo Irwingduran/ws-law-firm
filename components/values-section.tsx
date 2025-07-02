@@ -41,8 +41,8 @@ export default function ValuesSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl lg:text-5xl font-light text-slate-900 mb-4">{t("values.title")}</h2>
-          <h3 className="text-2xl lg:text-3xl font-serif italic text-amber-600 mb-6">{t("values.subtitle")}</h3>
-          <div className="w-20 h-1 bg-amber-400 mx-auto mb-8" />
+          <h3 className="text-2xl lg:text-3xl font-serif italic text-[#941614] mb-6">{t("values.subtitle")}</h3>
+          <div className="w-20 h-1 bg-[#941614] mx-auto mb-8" />
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">{t("values.description")}</p>
         </motion.div>
 
@@ -57,10 +57,10 @@ export default function ValuesSection() {
               className="group text-center p-8 rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-500"
             >
               <div className="relative mb-6">
-                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-amber-400 to-amber-500 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                <div className="w-20 h-20 mx-auto bg-gradient-to-br from-[#941614] to-[#b31a17] rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                   <value.icon className="w-10 h-10 text-white" />
                 </div>
-                <div className="absolute inset-0 w-20 h-20 mx-auto bg-amber-400 rounded-full opacity-20 group-hover:animate-ping" />
+                <div className="absolute inset-0 w-20 h-20 mx-auto bg-[#941614] rounded-full opacity-20 group-hover:animate-ping" />
               </div>
               <h4 className="text-2xl font-semibold text-slate-900 mb-4">{value.title}</h4>
               <p className="text-gray-600 leading-relaxed">{value.description}</p>
@@ -97,7 +97,7 @@ export default function ValuesSection() {
             >
               <Button
                 size="lg"
-                className="bg-amber-400 hover:bg-amber-500 text-slate-900 px-10 py-4 text-lg font-semibold tracking-wide transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-[#941614] hover:bg-[#b31a17] text-white px-10 py-4 text-lg font-semibold tracking-wide transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 {t("values.cta.button")}
               </Button>

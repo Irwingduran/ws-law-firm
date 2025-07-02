@@ -53,7 +53,7 @@ export default function ContactSection() {
             >
               <div>
                 <h3 className="text-4xl font-light text-slate-900 mb-6">{t("contact.title")}</h3>
-                <div className="w-20 h-1 bg-amber-400 mb-8" />
+                <div className="w-20 h-1 bg-[#941614] mb-8" />
                 <p className="text-lg text-gray-700 leading-relaxed mb-8">{t("contact.description1")}</p>
                 <p className="text-lg text-gray-700 leading-relaxed">{t("contact.description2")}</p>
               </div>
@@ -66,7 +66,7 @@ export default function ContactSection() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   className="flex items-start space-x-4"
                 >
-                  <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#941614] rounded-full flex items-center justify-center flex-shrink-0">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -81,7 +81,7 @@ export default function ContactSection() {
                   transition={{ duration: 0.6, delay: 0.3 }}
                   className="flex items-start space-x-4"
                 >
-                  <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#941614] rounded-full flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -96,7 +96,7 @@ export default function ContactSection() {
                   transition={{ duration: 0.6, delay: 0.4 }}
                   className="flex items-start space-x-4"
                 >
-                  <div className="w-12 h-12 bg-amber-400 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-[#941614] rounded-full flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -126,7 +126,7 @@ export default function ContactSection() {
                       type="text"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#941614] focus:border-transparent transition-all duration-300"
                       required
                     />
                   </div>
@@ -140,7 +140,7 @@ export default function ContactSection() {
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#941614] focus:border-transparent transition-all duration-300"
                       required
                     />
                   </div>
@@ -156,7 +156,7 @@ export default function ContactSection() {
                     rows={6}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all duration-300 resize-none"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#941614] focus:border-transparent transition-all duration-300 resize-none"
                     required
                   />
                 </div>
@@ -164,7 +164,7 @@ export default function ContactSection() {
                 <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
                   <Button
                     type="submit"
-                    className="w-full bg-slate-900 hover:bg-slate-800 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
+                    className="w-full bg-[#941614] hover:bg-slate-800 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl"
                   >
                     <Send className="w-5 h-5" />
                     <span>{t("contact.form.send")}</span>

@@ -72,6 +72,7 @@ const translations = {
     // Services
     "services.title": "NUESTROS",
     "services.subtitle": "SERVICIOS",
+    "services.intro": "En Camacho del Río Abogados y Consultores, ofecemos servicios jrídicos especializados en el ámbito del derechos administrativo",
     "services.litigio.title": "Litigio Administrativo",
     "services.litigio.description":
       "Asesoría y defensa en contra de actos u omisiones de las dependencias y entidades de la administración pública en todos los niveles de gobierno.",

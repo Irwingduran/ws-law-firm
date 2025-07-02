@@ -1,6 +1,7 @@
 "use client"
 import React, { useRef, useEffect } from "react"
 import { Button } from "@/components/ui/button"
+import CameraHeroSlider from "./hero-slider"
 
 interface CtaParallaxProps {
   title?: string
@@ -42,7 +43,7 @@ export default function CtaParallax({
       <div className="relative z-20 flex flex-col items-center justify-center text-center text-white px-4">
         <h2 className="text-3xl md:text-5xl font-bold mb-2 drop-shadow-lg">{title}</h2>
         <p className="text-lg md:text-2xl mb-6 drop-shadow-md">{subtitle}</p>
-        <Button onClick={onClick} size="lg" className="bg-primary hover:bg-primary/80 text-white shadow-lg">
+        <Button onClick={CameraHeroSlider} size="lg" className="bg-[#941514] hover:bg-[#941514]/80 text-white shadow-lg">
           {buttonText}
         </Button>
       </div>
